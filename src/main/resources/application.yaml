@@ -1,0 +1,30 @@
+camunda.bpm.admin-user:
+  id: a
+  password: a
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+
+elasticSearch:
+  url: localhost:9200
+
+mails:
+  path: src/main/resources/mails.txt
+
+smpt:
+  username: fortestcps@mail.ru
+  password: VT0YJt5UYrxFEyGuxXhe
+  server: smtp.mail.ru
+  port: 465
