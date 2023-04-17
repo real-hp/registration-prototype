@@ -8,7 +8,7 @@ docker run -d --name es762 -p 9200:9200 -e "discovery.type=single-node" elastics
 docker start es762
 ```
 
-Домены почт подгружаеются из файла mails.txt при старте приложения.
+Домены почт подгружаеются из файла mails.txt при старте приложения.  
 Добавить домен вручную:
 ```
 http://localhost:8080/email?email=test.com
@@ -19,8 +19,8 @@ http://localhost:8080/email?email=test.com
 Отправляем запрос на регистрацию
 ![request](https://i.ibb.co/Npw4LXc/reqreg.png)
 
-Если домен не прошел автоматическую проверку, открывается userTask
-camunda login: a password: a
+Если домен не прошел автоматическую проверку, открывается userTask  
+camunda login: a password: a  
 http://localhost:8080/camunda/app/tasklist/default/
 
 Подтверждаем почту 
